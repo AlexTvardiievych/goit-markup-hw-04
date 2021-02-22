@@ -119,6 +119,10 @@ header{
   align-items: center;
 }
 
+.footer-social-links > li:not(:last-child){
+  margin-right: 10px;
+}
+
 .footer-social-links-container{
   margin-left: 70px;
 }
