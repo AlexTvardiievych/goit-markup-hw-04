@@ -2,6 +2,10 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+header{
+  margin: 0 auto;
+}
+
 .web-studio-black{
   color: var(--full-balck);
   font-family: 'Raleway', sans-serif;
@@ -17,7 +21,7 @@ body{
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  letter-spacing: 0.02em;   
+  letter-spacing: 0.02em;  
 }
 
 .web{
@@ -31,7 +35,7 @@ body{
 
 .nav-menu :not(:last-child),
 .nav-contact :not(:last-child){
-  padding-right: 50px;
+  padding-right: 30px;
 }
 
 .nav-menu > li > a{
@@ -46,16 +50,23 @@ body{
   color: var(--text-blue);
 }
 
-.nav-contact{
-  display: flex;     
-} 
+.nav-contact-header{
+  display: flex;  
+  margin: 0 auto;   
+}
+
+.nav-contact-header > li > a{  
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
 
 .nav-contact > li > a{
   color: var(--subtitle-text);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em;  
 }
 
 .nav-contact > li > a:hover,
@@ -71,14 +82,66 @@ body{
   display: block;  
 }
 
+.nav-contact-icon{
+  fill: currentColor;
+  margin-right: 10px;
+}
+
 .footer-block{
   background-color: var(--bg-main-color);
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 60px;  
 }
 
-#contacts{ 
+.footer-flexbox{
+  display: flex;
+  align-items: baseline;
+}
+
+#contacts{
   margin-top: 30px;
+}
+
+.footer-social-links-text{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--full-white);
+  margin-bottom: 20px;
+}
+
+.footer-social-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-links-container{
+  margin-left: 70px;
+}
+
+.footer-social-links-item{
+  background-color: var(--footer-social-links-bg);
+  color: var(--full-white);
+  border-radius: 50%;
+  height: 44px;
+  width: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-links-item:hover,
+.footer-social-links-item:focus{
+  background-color: var(--text-blue);
+  cursor: pointer;
+}
+
+.footer-social-link-icon{
+  fill: currentColor;
 }
 
 .street{
