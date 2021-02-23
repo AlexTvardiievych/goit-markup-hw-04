@@ -65,6 +65,7 @@
   line-height: 1.2;
   letter-spacing: 0.03em; 
   align-items: center;  
+  margin-bottom: 10px;
 }
 
 .features > li > p{
